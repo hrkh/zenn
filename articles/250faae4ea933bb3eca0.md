@@ -30,4 +30,4 @@ kubectl delete pod ${POD_NAME}
 pod "${POD_NAME}" deleted
 ```
 
-と表示されれば削除できている。後は自動で新しいsql-proxyが立ち上がるのを待てばOK。
+と表示されれば削除できている。後は自動で新しいsqlproxyが立ち上がるのを待てばOK。
