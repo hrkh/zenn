@@ -1,5 +1,5 @@
 ---
-title: "Cloud Composerで \"Can't connect to MySQL server on 'airflow-sqlproxy-service.default.svc.cluster.local'\" と出てしまいTaskが実行されないときの対処法"
+title: "Cloud Composerから管理用のMySQLに接続できないときの対処法"
 emoji: "✨"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["GCP", "CloudComposer", "Airflow", "GKE"]
@@ -11,6 +11,7 @@ published: true
 * Cloud Composerのジョブがエラーで失敗してしまう。
 * 失敗したTaskは 'up_for_retry' になるが、try_numberが増えない。
 * Taskのログを見ると、`Can't connect to MySQL server on 'airflow-sqlproxy-service.default.svc.cluster.local'` と出ている。
+  * どうやら、管理用のMySQLに接続できていない模様
 
 ### 対応
 
